@@ -1,0 +1,155 @@
+<html>
+<title>welcome to quiz apps</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-lg-12  mainheading">
+                <center>
+                    <div id="userinfo" style="display:block">
+                        <i class="fa fa-user"></i>
+                        <div class="playerName">lapzap98</div>
+                    </div>
+                    <div id="userscore" style="display:none">
+                        <div id="quizTimer"></div>
+                        <div id="scoreBoard">
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- <div id="usercurrentScore">
+            <p>score:</p>
+            <p>
+              0/100</p>
+          </div> -->
+                </center>
+            </div>
+            <!-- end of mainheading -->
+            <div class="col-xs-12 col-sm-12 col-lg-12  mainbody"> </div>
+            <!-- code for quiz result -->
+            <div class="col-sm-8 col-xs-12 col-sm-offset-2 " id="resultboxContainer">
+                <div class="row">
+                    <center>
+                        <div class="resultDisplay">
+                            <div id="ResultDisplayHeader"><b>RESULT</b></div>
+                            <div id="resultBox">
+                                <div id="outerCirclePart" class="animated bounceIn">
+                                    <div id="innerCirclePart"></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success one" id="resultDetail_btn">Result Details</button>
+                            <button class="btn btn-success two" id="playAgain">Play Again</button>
+
+                        </div>
+                        <div class="resultDetail" style="display: none">
+                            <div id="ResultDisplayHeader">Result In Details</div>
+                            <ul id="userResultDetail">
+                                <li>
+                                    <p>Total Question</p>
+                                    <p>20</p>
+                                </li>
+                                <li>
+                                    <p>Correct Answer</p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p>Total Duration</p>
+                                    <p>20</p>
+                                </li>
+                                <li>
+                                    <p>Score</p>
+                                    <p>20</p>
+                                </li>
+                                <li class="cate">
+                                    <p>categories selected</p>
+                                    <p>science,computer</p>
+                                </li>
+                            </ul>
+                            <div class="btn btn-danger" id="fall_back">Back</div>
+                        </div>
+                    </center>
+                    <!--  end of resultBox -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of resultboxContainer -->
+            <!-- end of quiz result -->
+            <!-- code for questionDisplay window -->
+            <div class="col-sm-8 col-xs-12 col-sm-offset-2 " id="questionbox">
+                <div class="row">
+                    <center>
+                        <div id="questionDisplaybox">
+                            <div id="questionCate"></div>
+                            <div id="currentQuestion"></div>
+                        </div>
+                    </center>
+                </div>
+                <!-- end of row -->
+                <div class="row" id="optionbox">
+                    <div class="col-sm-6">
+                        <div class="btn btn-default" for="0" onclick="answerselect(this)">Option1</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="btn btn-default" for="0" onclick="answerselect(this)">option2</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="btn btn-default" for="0" onclick="answerselect(this)">option3</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="btn btn-default" for="0" onclick="answerselect(this)">option4</div>
+                    </div>
+                    <span id="loginError">Please select the option</span>
+                </div>
+                <!-- end of row -->
+                <center class="nextbtn">
+                    <button class="btn btn-default" id="nextoption" onclick="userAnswerSubmission()">NEXT</button>
+                </center>
+            </div>
+            <!-- end of question display -->
+            <!-- code for cateselection screen -->
+            <div class="col-sm-8 col-xs-12 col-sm-offset-2" id="mainbodybox">
+                <div class="row">
+                    <div class="mainbodyheader">
+                        <center>Please select your categories</center>
+                    </div>
+                    <center>
+                        <div class="col-sm-6 col-xs-12 " id="btnlist">
+                            <button class="btn btn-default" for="0" value="0" onclick="cateselect(this)">
+                                SCIENCE
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-default " for="0" value="1" onclick="cateselect(this)">COMPUTER
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-default " for="0" value="2" onclick="cateselect(this)">
+                                PROGRAMMING
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </button>
+                            <p style="padding-left: 10px;display:none;" id=CateError>!please select at least one categories</p>
+                        </div>
+                        <div class="col-sm-6 col-xs-12" id="btnstart">
+                            <button class="btn btn-default" onclick="welcomeStart()">start</button>
+                        </div>
+                    </center>
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end fo cateselection window -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+     <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+html, body {
+  height: 100%; }
+
+.mainheading {
+  background-color: #e74c3c;
+  height: 32%;
+  transition: background-color 5s;
+  transition-timing-function: ease;
+  padding-bottom: 20px; }
+  .mainheading i {
+    font-size: 40px;
+    color: white;
+    padding-top: 20px; }
+  .mainheading .playerName {
+    color: white;
+    font-size: 25px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .mainheading #quizTimer {
+    font-size: 40px;
+    color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px; }
+    @media screen and (max-width: 760px) {
+      .mainheading #quizTimer {
+        margin-bottom: 20px; } }
+  .mainheading #scoreBoard {
+    width: 15%;
+    height: 13px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 1px #000000;
+    background-color: transparent; }
+    @media screen and (max-width: 760px) {
+      .mainheading #scoreBoard {
+        width: 80%; } }
+    .mainheading #scoreBoard div {
+      border-radius: 4px;
+      float: left;
+      height: 100%;
+      background-color: #f1c40f; }
+
+.mainbody {
+  background-color: #34495e;
+  height: 68%; }
+
+#mainbodybox {
+  background-color: #2c3e50;
+  height: 65%;
+  position: absolute;
+  top: 21%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  @media screen and (max-width: 768px) {
+    #mainbodybox {
+      height: 79%; } }
+  #mainbodybox .mainbodyheader {
+    height: 70px;
+    background-color: #34495e;
+    color: white;
+    font-size: 1em;
+    padding-top: 20px;
+    letter-spacing: 1px; }
+  #mainbodybox .mainbodyheader {
+    color: white;
+    font-size: 1.2em; }
+
+#btnlist {
+  padding-left: 100px;
+  padding-top: 55px; }
+  @media screen and (max-width: 768px) {
+    #btnlist {
+      padding-left: 10px; } }
+  #btnlist i {
+    font-size: 22px;
+    float: right;
+    display: none; }
+  #btnlist .btn {
+    text-align: left;
+    border-radius: 2px;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 1px #000000;
+    -moz-box-shadow: inset 0 0 1px #000000;
+    -webkit-box-shadow: inset 0 0 1px #000000; }
+  #btnlist .btn:hover,
+  #btnlist .btn:focus {
+    outline: none; }
+  #btnlist .colorBackground {
+    background-color: #e74c3c; }
+
+#btnstart {
+  padding-top: 100px;
+  padding-left: 120px; }
+  @media screen and (max-width: 760px) {
+    #btnstart {
+      padding-left: 10px;
+      padding-top: 10px; } }
+  #btnstart button {
+    background-color: #e74c3c;
+    color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    outline: none;
+    font-size: 25px;
+    border: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    @media screen and (max-width: 760px) {
+      #btnstart button {
+        border-radius: 0;
+        width: 50%;
+        height: 10%; } }
+
+#questionbox {
+  background-color: #2c3e50;
+  height: 65%;
+  position: absolute;
+  top: 21%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  @media screen and (max-width: 768px) {
+    #questionbox {
+      height: 79%; } }
+  #questionbox #questionDisplaybox {
+    min-height: 78px;
+    background-color: #34495e;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      #questionbox #questionDisplaybox {
+        height: 20%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 0px; } }
+    #questionbox #questionDisplaybox #currentQuestion {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    #questionbox #questionDisplaybox #questionCate {
+      color: black;
+      width: 15%;
+      background-color: white;
+      border-radius: 10px;
+      position: relative;
+      top: -10px;
+      padding: 2px 5px 2px 5px; }
+      @media screen and (max-width: 760px) {
+        #questionbox #questionDisplaybox #questionCate {
+          width: 25%; } }
+
+.nextbtn #nextoption {
+  outline: 0;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white;
+  border-radius: 2px;
+  width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #e74c3c; }
+  @media screen and (max-width: 760px) {
+    .nextbtn #nextoption {
+      padding-top: 8px;
+      float: right; } }
+
+#optionbox {
+  max-height: 64.5%;
+  padding-top: 20px; }
+  @media screen and (max-width: 768px) {
+    #optionbox {
+      padding-top: 5%;
+      padding-bottom: 5%; } }
+  #optionbox #loginError {
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    display: none; }
+  #optionbox .col-sm-6 {
+    text-align: center; }
+    #optionbox .col-sm-6 .btn-default {
+      width: 80%;
+      height: 60px;
+      margin-bottom: 55px;
+      padding-top: 18px;
+      border: 0px;
+      background-color: #e74c3c;
+      border-radius: 2px;
+      color: white;
+      font-size: 18px; }
+      @media screen and (max-width: 760px) {
+        #optionbox .col-sm-6 .btn-default {
+          float: left;
+          text-align: left;
+          margin-bottom: 15px;
+          font-size: 15px; } }
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed; }
+
+#resultboxContainer {
+  background-color: #2c3e50;
+  height: 65%;
+  position: absolute;
+  top: 21%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  @media screen and (max-width: 768px) {
+    #resultboxContainer {
+      height: 79%; } }
+  #resultboxContainer #ResultDisplayHeader {
+    height: 70px;
+    background-color: #34495e;
+    color: white;
+    font-size: 1em;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 400; }
+  #resultboxContainer #resultBox {
+    margin-top: 40px;
+    padding-bottom: 20px; }
+  #resultboxContainer .btn-danger {
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    background-color: #e74c3c;
+    border-radius: 1px;
+    height: 45px;
+    padding-top: 10px;
+    width: 45%; }
+  #resultboxContainer .resultDetail ul {
+    margin-top: 40px;
+    padding-left: 5px;
+    list-style: none;
+    height: auto;
+    color: white;
+    width: 60%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex: 3; }
+    @media screen and (max-width: 760px) {
+      #resultboxContainer .resultDetail ul {
+        width: 90%; } }
+    #resultboxContainer .resultDetail ul .cate {
+      flex: 5;
+      margin-top: 30px; }
+      #resultboxContainer .resultDetail ul .cate p:first-child {
+        padding-top: 8px;
+        padding-bottom: 8px; }
+    #resultboxContainer .resultDetail ul li {
+      width: 23%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      color: white;
+      display: flex;
+      flex-direction: column; }
+      @media screen and (max-width: 760px) {
+        #resultboxContainer .resultDetail ul li {
+          width: 46%; } }
+      #resultboxContainer .resultDetail ul li p:first-child {
+        background-color: #e74c3c;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        margin-bottom: 0px; }
+      #resultboxContainer .resultDetail ul li p:last-child {
+        border: 1px solid white;
+        border-top: 0px;
+        height: 40px;
+        padding-top: 10px; }
+  #resultboxContainer #outerCirclePart {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    padding-top: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  #resultboxContainer #innerCirclePart {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    padding-top: 40px;
+    font-size: 2.5em;
+    color: #e74c3c;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer; }
+  #resultboxContainer label {
+    margin-top: 10px;
+    font-weight: normal;
+    color: #e74c3c;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  @media screen and (max-width: 768px) {
+    #resultboxContainer {
+      font-size: 1.7em;
+      letter-spacing: 1px; }
+      #resultboxContainer #outerCirclePart {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: #e74c3c;
+        padding-top: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+      #resultboxContainer #innerCirclePart {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        background-color: #2c3e50;
+        padding-top: 40px;
+        font-size: 2.5em;
+        color: #e74c3c;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        cursor: pointer; } }
+  #resultboxContainer .resultDisplay > button {
+    width: 30%;
+    font-size: 1em;
+    border-radius: 0;
+    margin-left: 20px;
+    margin-top: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    #resultboxContainer .resultDisplay > button:focus, #resultboxContainer .resultDisplay > button:active {
+      outline: none !important; }
+    @media screen and (max-width: 760px) {
+      #resultboxContainer .resultDisplay > button {
+        width: 60%;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 20px; } }
+  #resultboxContainer .one {
+    background-color: transparent;
+    border: 3px solid #e74c3c; }
+  #resultboxContainer .two {
+    background-color: #e74c3c;
+    border: 3px solid #e74c3c; }
+
+#correctAnswerDisplay {
+  background-color: #2c3e50;
+  height: 65%;
+  position: absolute;
+  top: 21%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  min-height: 60%; }
+  @media screen and (max-width: 768px) {
+    #correctAnswerDisplay {
+      height: 79%; } }
+  #correctAnswerDisplay #answerheader {
+    height: 70px;
+    background-color: #34495e;
+    color: white;
+    font-size: 1em;
+    padding-top: 20px;
+    letter-spacing: 1px; }
+  #correctAnswerDisplay #userScore {
+    margin-top: 40px;
+    padding-left: 60px; }
+    #correctAnswerDisplay #userScore #outerCirclePart {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background-color: #e74c3c;
+      padding-top: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    #correctAnswerDisplay #userScore #innerCirclePart {
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      background-color: #2c3e50;
+      padding-top: 40px;
+      font-size: 2.5em;
+      color: #e74c3c;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      cursor: pointer; }
+    #correctAnswerDisplay #userScore #innerCirclePart {
+      padding-top: 32px;
+      font-size: 18px; }
+  #correctAnswerDisplay #answerCloseBtn {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    background-color: transparent; }
+
+#questionCorrectAnswer__header {
+  margin-top: 20px;
+  height: 40px;
+  background-color: #e74c3c; }
+
+#questionCorrectAnswer__container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 20px;
+  color: white;
+  max-height: 300px;
+  padding-left: 40px;
+  padding-right: 10px;
+  width: 95%;
+  margin-bottom: 5px;
+  margin-top: 25px; }
+  #questionCorrectAnswer__container #questionCorrectAnswer__questionTitle {
+    background-color: #95a5a6;
+    min-height: 70px;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer; }
+    #questionCorrectAnswer__container #questionCorrectAnswer__questionTitle:first-child {
+      margin-top: 15px; }
+  #questionCorrectAnswer__container #questionCorrectAnswer__answerDisplay {
+    height: 40px;
+    background-color: #34495e;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    padding-top: 10px; }
+    #questionCorrectAnswer__container #questionCorrectAnswer__answerDisplay p {
+      display: inline-block;
+      margin-right: 20px; }
+  #questionCorrectAnswer__container #question {
+    float: left;
+    font-size: 15px;
+    display: block; }
+
+#userDetailDisplayBox {
+  background-color: white;
+  height: 60px;
+  margin-top: 20px;
+  border: 0; }
+
+/*# sourceMappingURL=style.css.map */
