@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mainheading {
+  background-color: #3498db;
+  height: 30%;
+}
+
+.mainbody {
+  background-color: #34495e;
+  height: 70%;
+}
+
+#mainbodybox {
+  background-color: #34495e;
+  height: 480px;
+  position: fixed;
+  top: 20%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (max-width:760px) {
+  #mainbodybox {
+    height: 680px;
+  }
+}
+
+#mainbodybox #errorMessage {
+  color: white;
+  padding-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  display: none;
+}
+
+#mainbodybox #loginbtn {
+  background-color: #3498db;
+  border: 0px;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+}
+
+form {
+    
+
+  padding-top: 40px;
+ /* padding-bottom: 40px;*/
+}
+
+form .checkbox {
+  padding-left: 10px;
+}
+
+form .checkbox #checkbox1 {
+  margin-left: 2px;
+}
+
+form .checkbox label {
+  font-family: 'Open Sans', sans-serif;
+}
+
+form .form-control {
+  height: 60px !important;
+  width: 90%;
+  border-radius: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  color: white;
+  background-color: #2c3e50;
+  box-shadow: none !important;
+  
+}
+
+/*form .form-control:focus {
+  width: 100%;
+  border:2px solid #3498db !important;
+
+}*/
+form .form-control:first-child{
+  border-bottom: 1px solid #243342;
+  margin-bottom:5px;
+}
+form .form-control::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+}
+
+center .header {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+center .first {
+  margin-bottom: -8px;
+  font-size: 23px;
+  padding-top: 60px;
+  font-weight: 600;
+}
+
+center .second {
+  padding-left: 3px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 7px;
+}
+
+#userfont img {
+  padding-top: 10px;
+  width: 128px;
+  height:auto;
+  
+}
+#userform>i{
+  float: left;
+  position: relative;
+  top:-30px;
+  left:5px;
+  display: block;
+
+}
+
+.mainbodybox__header {
+  height: 72px;
+  background-color: #2c3e50;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+/*//for small device media query*/
+@media screen and (max-width:760px){
+  form{
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .mainbodybox__header{
+    display: none;
+  }
+  #userfont{
+    padding-top: 40px;
+  }
+  #mainbodybox #loginbtn{
+    width:90%;
+    height: 45px;
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map */
