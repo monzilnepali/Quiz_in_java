@@ -8,7 +8,8 @@ $result-answer-btn:#2ecc71;
     font-family: 'Open Sans', sans-serif;
 }
 html, body {
-    height: 100%
+    height: 100%;
+    background-color:$mainbody-color;
 }
 
 
@@ -117,8 +118,8 @@ $innerCircle) {
 }
 
 .mainbody {
-    background-color:$mainbody-color;
-    min-height: 68%;
+    //background-color:$mainbody-color;
+   // min-height: 550px;
 }
 
 #mainbodybox {
