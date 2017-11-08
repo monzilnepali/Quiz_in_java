@@ -1,9 +1,6 @@
 window.onload = function() {
     console.log("loaded");
     localStorage.clear();
-
-
-
 }
 
 
@@ -19,12 +16,12 @@ function loginChecking() {
 
     }else{
         if(emailFlag==1){
-        alert("your logged in");
+       // alert("your logged in");
         playerDetail.name=uname;
            playerDetail.email=email;
            localStorage.setItem("player",JSON.stringify(playerDetail));
             console.log("redirecting to quiz setting page");
-            window.location="/quiz_app.html";
+            window.location="../index.html";
          }else{
             document.getElementById("errorMessage").style.display="block";
             }

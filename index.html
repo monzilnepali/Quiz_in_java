@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -17,25 +18,19 @@
         <div class="row">
             <div class="col-sm-12 col-xs-12 col-lg-12  mainheading">
                 <center>
-                    <div id="userinfo" style="display:block">
+                    <div id="userinfo" style="display:none">
                         <i class="fa fa-user"></i>
-                        <div class="playerName">lapzap98</div>
                     </div>
-                    <div id="userscore" style="display:none">
+                    <div id="userscore" style="display:block">
                         <div id="quizTimer"></div>
                         <div id="scoreBoard">
                             <div></div>
                         </div>
                     </div>
-                    <!-- <div id="usercurrentScore">
-            <p>score:</p>
-            <p>
-              0/100</p>
-          </div> -->
                 </center>
             </div>
             <!-- end of mainheading -->
-            <div class="col-xs-12 col-sm-12 col-lg-12  mainbody"> </div>
+       
             <!-- code for quiz result -->
             <div class="col-sm-8 col-xs-12 col-sm-offset-2 " id="resultboxContainer">
                 <div class="row">
@@ -149,7 +144,7 @@
         <!-- end of row -->
     </div>
     <!-- end of container -->
-     <script src="script.js"></script>
+     
 </body>
 
 </html>
