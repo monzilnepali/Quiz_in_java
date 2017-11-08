@@ -15,7 +15,8 @@ window.onload = function() {
         document.getElementById("mainbodybox").style.display = "block";
 
 
-
+ }
+}
         //global variable declaretion
 
         var currentUserAnswerSelected;
@@ -564,5 +565,4 @@ window.onload = function() {
 
         });
 
-    }
-}
+   
