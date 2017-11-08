@@ -533,7 +533,7 @@ window.onload = function() {
             }
 
             console.log(usercate);
-            list[7].innerHTML = "60" //score
+            list[7].innerHTML = resultper //score
             list[9].innerHTML = usercate;
 
             return;
