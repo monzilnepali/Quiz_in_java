@@ -7,16 +7,26 @@ window.onload = function() {
         console.log(player.name);
         var element = document.getElementById("userinfo");
         var newdiv = document.createElement("div");
+        var newdiv01=document.createElement("button");
+         newdiv01.setAttribute('id','profileReset');
         newdiv.innerHTML = player.name;
         newdiv.className = "playerName";
         element.appendChild(newdiv);
+        newdiv01.innerHTML="Logout";
+        element.appendChild(newdiv01);
+       
         document.getElementById("questionbox").style.display = "none";
         document.getElementById("resultboxContainer").style.display = "none";
         document.getElementById("mainbodybox").style.display = "block";
 
+document.getElementById("profileReset").addEventListener("click",function(){
+
+    window.location="login system/index.html";
+});
 
  }
 }
+
         //global variable declaretion
 
         var currentUserAnswerSelected;
@@ -54,10 +64,11 @@ window.onload = function() {
                 console.log(timer);
                 timer.innerText = coutDownTimeOut;
 
-                if (coutDownTimeOut <= 6) {
+                if (coutDownTimeOut == 6) {
                     // document.getElementById("timerBox").style.backgroundColor="#c0392b";
                     //timer.getElementsByTagName("div")[0].style.backgroundColor = "#e74c3c";
-                    document.getElementsByClassName("mainheading")[0].style.backgroundColor = "#e74c3c";
+                    document.getElementsByClassName("mainheading")[0].className +=" timeOut";
+                    console.log(document.getElementsByClassName("mainheading"));
                 }
                 if (coutDownTimeOut == 0) {
                     clearInterval(x);
@@ -424,6 +435,7 @@ window.onload = function() {
 
 
         function questionDisplay() {
+       document.getElementsByClassName("mainheading")[0].className ="mainheading";
             startTimer(12);
             //header part 
 
@@ -533,7 +545,7 @@ window.onload = function() {
             }
 
             console.log(usercate);
-            list[7].innerHTML = resultper //score
+            list[7].innerHTML = resultPer //score
             list[9].innerHTML = usercate;
 
             return;

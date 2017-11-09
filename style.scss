@@ -63,17 +63,34 @@ $innerCircle) {
     letter-spacing: 1px; //border-bottom: 2px solid #E0E0E0;
 }
 
+ .timeOut{
+        background-color:#e74c3c;
+    }
 .mainheading {
     background-color: $mainheader-color;
     height: 32%;
     transition: background-color 5s;
     transition-timing-function: ease;
     padding-bottom: 20px;
+   
+    #userinfo{
     i {
         font-size: 40px;
         color: white;
         padding-top: 20px;
     }
+    button{
+        display:block;
+        background-color:$mainbody-color;
+        color:white;
+        padding-left:10px;
+    padding-right:10px;
+        border:0px;
+        border-radius:0px;
+        
+    }
+}
+
     .playerName {
         color: white;
         font-size: 25px;
@@ -117,10 +134,7 @@ $innerCircle) {
     }
 }
 
-.mainbody {
-    //background-color:$mainbody-color;
-   // min-height: 550px;
-}
+
 
 #mainbodybox {
     @include bodyBox;

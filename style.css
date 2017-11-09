@@ -6,16 +6,27 @@ html, body {
   height: 100%;
   background-color: #34495e; }
 
+.timeOut {
+  background-color: #e74c3c; }
+
 .mainheading {
   background-color: #3498db;
   height: 32%;
   transition: background-color 5s;
   transition-timing-function: ease;
   padding-bottom: 20px; }
-  .mainheading i {
+  .mainheading #userinfo i {
     font-size: 40px;
     color: white;
     padding-top: 20px; }
+  .mainheading #userinfo button {
+    display: block;
+    background-color: #34495e;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px;
+    border-radius: 0px; }
   .mainheading .playerName {
     color: white;
     font-size: 25px;
