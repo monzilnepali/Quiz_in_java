@@ -71,7 +71,7 @@ p {
       height: 30px;
       padding-left: 12px;
       cursor: pointer;
-      color: #7f8c8d; }
+      color: #37474F z; }
   .smalldevice-header p {
     position: fixed;
     top: 12px;
@@ -243,16 +243,15 @@ p {
   @media screen and (max-width: 760px) {
     .mainBody {
       width: 100%;
-      margin-top: 13%; }
-      .mainBody .mobile-header {
-        display: block; }
+      margin-top: 14%;
+      height: 92%; }
       .mainBody .flex-template {
         padding: 0;
         justify-content: space-around; }
         .mainBody .flex-template .flex-templateCard {
           height: 29%;
           width: 36%;
-          margin-bottom: 1px; }
+          margin-top: 10px; }
           .mainBody .flex-template .flex-templateCard .img {
             height: 93%; }
           .mainBody .flex-template .flex-templateCard .description {
