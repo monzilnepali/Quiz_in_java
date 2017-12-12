@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 
 // color variable declaration
@@ -97,7 +99,7 @@ p{
  	left:50px;
  	color:white;
  	font-size:20px;
- 	font-weight:bold;
+ 	
  }
  i{
  	position:fixed;
@@ -122,6 +124,8 @@ left:12px;
 	width:23%;
 	background-color: $sidebarcolor;
 	position:relative;
+	font-family: 'Roboto', sans-serif;
+
    //border: 1px solid red;
 
 	h2{
@@ -130,6 +134,10 @@ left:12px;
 		padding-bottom: 40px;
 		color:white;
 		font-weight: 400;
+		@media screen and(max-width:760px){
+			font-size:22px;
+			padding-left:25px;
+		}
 	}
 	.template-cate{
 		margin:0;
@@ -207,9 +215,11 @@ left:12px;
 			
 			font-size:55px;
 			padding-left:10px;
+			
 		}
 		.contact-desc{
 			padding-left:17px;
+
 			h3{
 				margin:0;
 				padding:0;
