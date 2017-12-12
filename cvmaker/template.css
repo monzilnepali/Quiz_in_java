@@ -43,6 +43,7 @@ p {
   .flex-sidebar h2 {
     padding-top: 40px;
     padding-left: 35px;
+    padding-bottom: 40px;
     color: white;
     font-weight: 400; }
   .flex-sidebar .template-cate {
@@ -84,6 +85,7 @@ p {
     padding-right: 10px;
     display: none; }
   .flex-sidebar .contact-info {
+    margin-top: 40px;
     border: 2px solid #bdc3c7;
     height: 10%;
     display: flex;
@@ -114,9 +116,11 @@ p {
     padding: 0;
     margin: 0;
     position: absolute;
-    bottom: 10px;
-    width: 100%; }
+    bottom: 15px;
+    width: 100%;
+    border-top: 2px solid #283645; }
     .flex-sidebar .social-icon li {
+      padding-top: 10px;
       list-style-type: none; }
       .flex-sidebar .social-icon li i {
         color: white;
@@ -147,6 +151,30 @@ p {
     display: none;
     height: 7%;
     background-color: DodgerBlue; }
+    .mainBody .mobile-header .rightsidebar-open {
+      transform: translateX(0); }
+    .mainBody .mobile-header ul {
+      position: fixed;
+      top: 0px;
+      right: 0;
+      padding: 0;
+      margin: 0;
+      background-color: white;
+      color: black;
+      z-index: 5;
+      width: 28%;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transform: translateX(100%);
+      transition: transform 0.5s;
+      transition-timing-function: ease; }
+      .mainBody .mobile-header ul li {
+        padding-top: 10px;
+        list-style-type: none;
+        height: 35px;
+        padding-left: 10px;
+        cursor: pointer;
+        color: #7f8c8d; }
   .mainBody i {
     position: fixed;
     color: white;
