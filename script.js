@@ -55,7 +55,7 @@ document.getElementById("profileReset").addEventListener("click",function(){
 
 
         //code for quiz timer
-        var coutDownTimeOut, x;
+        var coutDownTimeOut, x,colorIndex=0;
 
         function startTimer(answerTime) {
             coutDownTimeOut = answerTime;
@@ -64,16 +64,24 @@ document.getElementById("profileReset").addEventListener("click",function(){
                 console.log(timer);
                 timer.innerText = coutDownTimeOut;
 
-                if (coutDownTimeOut == 6) {
+                if (coutDownTimeOut <= 6) {
                     // document.getElementById("timerBox").style.backgroundColor="#c0392b";
                     //timer.getElementsByTagName("div")[0].style.backgroundColor = "#e74c3c";
-                    document.getElementsByClassName("mainheading")[0].className +=" timeOut";
+                    console.log("calling color changer");
+                    if(colorIndex==0){
+                    document.getElementsByClassName("mainheading")[0].style.transition="background-color 8s";
+                    document.getElementsByClassName("mainheading")[0].style.backgroundColor = '#c0392b';
+                    colorIndex=1;
+                  }
                     console.log(document.getElementsByClassName("mainheading"));
                 }
                 if (coutDownTimeOut == 0) {
                     clearInterval(x);
                     // timer.getElementsByTagName("p")[0].innerText = "0";
                     // console.log("timer finished");
+                    document.getElementsByClassName("mainheading")[0].style.backgroundColor = '#16a085';
+                 
+                    colorIndex=0;
                     questionDisplay();
                     return;
                     //automatically starting new questrion
@@ -194,6 +202,8 @@ document.getElementById("profileReset").addEventListener("click",function(){
                 console.log("calling the QuestionDisplay function");
                 document.getElementById("optionbox").className = "row";
                 console.log(document.getElementById("optionbox"));
+                document.getElementsByClassName("mainheading")[0].style.backgroundColor = '#16a085';
+
                 questionDisplay();
 
             }
@@ -436,7 +446,8 @@ document.getElementById("profileReset").addEventListener("click",function(){
 
         function questionDisplay() {
        document.getElementsByClassName("mainheading")[0].className ="mainheading";
-            startTimer(12);
+          document.getElementsByClassName("mainheading")[0].style.transition='none';
+      startTimer(12);
             //header part 
 
             answerselectedflag = 0;
@@ -454,6 +465,7 @@ document.getElementById("profileReset").addEventListener("click",function(){
             } else {
                 console.log("progress bar");
                 var questionPart = Math.floor(100 / (categories.length));
+              //  console.log("the question part is"+questionPart);
                 console.log("questionpart" + questionPart);
                 console.log("question tracker" + currentQuestionIndex);
                 var scoreBar = document.getElementById("scoreBoard");
@@ -545,7 +557,7 @@ document.getElementById("profileReset").addEventListener("click",function(){
             }
 
             console.log(usercate);
-            list[7].innerHTML = resultPer //score
+            list[7].innerHTML = Math.round(resultPer) //score
             list[9].innerHTML = usercate;
 
             return;

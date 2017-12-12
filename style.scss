@@ -1,4 +1,4 @@
-$mainheader-color:#3498db; //header color
+$mainheader-color:#16a085; //header color
 $mainbody-color:#34495e; //body color
 $mainbody-white:#2c3e50; //box color
 $result-answer-btn:#2ecc71;
@@ -66,12 +66,13 @@ $innerCircle) {
  .timeOut{
         background-color:#e74c3c;
     }
+
 .mainheading {
     background-color: $mainheader-color;
     height: 32%;
-    transition: background-color 5s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in;
     padding-bottom: 20px;
+    padding-top:10px;
    
     #userinfo{
     i {
@@ -91,6 +92,7 @@ $innerCircle) {
     }
 }
 
+
     .playerName {
         color: white;
         font-size: 25px;
@@ -106,21 +108,21 @@ $innerCircle) {
         width: 80px;
         height: 80px;
         padding-top: 5px;
-        margin-top: 10px;
+       // margin-top: 10px;
         margin-bottom: 15px;
         @media screen and (max-width: 760px) {
             margin-bottom:20px;
         }
     }
     #scoreBoard {
-        width: 15%;
+        width: 25%;
         height: 13px;
         border-radius: 4px;
         box-shadow: inset 0 0 1px #000000;
         //-moz-box-shadow:inset 0 0 1px #000000;
         background-color: transparent; //  border:1px solid white;
         @media screen and (max-width: 760px) {
-            width:80%;
+            width:70%;
 
         }
 
@@ -463,7 +465,7 @@ $innerCircle) {
         @include bodyBoxHeader;
     }
     #userScore {
-        margin-top: 40px; //background-color: black;
+       // margin-top: 40px; //background-color: black;
         padding-left: 60px;
         @include scoreCircle(150px,
         120px);
