@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto Condensed', sans-serif; }
 
 p {
   margin: 0;
@@ -169,12 +169,18 @@ p {
       transition: transform 0.5s;
       transition-timing-function: ease; }
       .mainBody .mobile-header ul li {
-        padding-top: 10px;
+        padding-top: 8px;
         list-style-type: none;
-        height: 35px;
-        padding-left: 10px;
+        height: 30px;
+        padding-left: 12px;
         cursor: pointer;
         color: #7f8c8d; }
+  .mainBody p {
+    position: fixed;
+    top: 12px;
+    left: 40px;
+    color: white;
+    font-size: 20px; }
   .mainBody i {
     position: fixed;
     color: white;

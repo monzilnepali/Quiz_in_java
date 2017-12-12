@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 
 // color variable declaration
@@ -8,7 +8,7 @@ html,body{
 	padding:0;
 	height: 100%;
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
 
 }
 p{
@@ -222,10 +222,10 @@ p{
  		transition-timing-function:ease;
  		
  		li{
- 			padding-top:10px;
+ 			padding-top:8px;
  			list-style-type:none;
- 			height:35px;
- 			padding-left:10px;
+ 			height:30px;
+ 			padding-left:12px;
  				cursor:pointer;
  				color:#7f8c8d;
 
@@ -233,6 +233,13 @@ p{
  		
  	}
 
+ }
+ p{
+ 	position:fixed;
+ 	top:12px;
+ 	left:40px;
+ 	color:white;
+ 	font-size:20px;
  }
  i{
  	position:fixed;
