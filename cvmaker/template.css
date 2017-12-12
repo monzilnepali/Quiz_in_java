@@ -35,6 +35,60 @@ p {
   .container1 .sidebar-open {
     transform: translateX(0); }
 
+.smalldevice-header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  z-index: 4;
+  background-color: DodgerBlue;
+  display: none;
+  background-color: DodgerBlue; }
+  @media screen and (max-width: 760px) {
+    .smalldevice-header {
+      display: block; } }
+  .smalldevice-header .rightsidebar-open {
+    transform: translateX(0); }
+  .smalldevice-header ul {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+    z-index: 5;
+    width: 28%;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    transition-timing-function: ease; }
+    .smalldevice-header ul li {
+      padding-top: 8px;
+      list-style-type: none;
+      height: 30px;
+      padding-left: 12px;
+      cursor: pointer;
+      color: #7f8c8d; }
+  .smalldevice-header p {
+    position: fixed;
+    top: 12px;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold; }
+  .smalldevice-header i {
+    position: fixed;
+    color: white;
+    font-size: 25px;
+    top: 12px; }
+  .smalldevice-header .fa-bars {
+    left: 12px; }
+  .smalldevice-header .fa-ellipsis-v {
+    right: 12px; }
+
 .flex-sidebar {
   height: 100%;
   width: 23%;
@@ -147,86 +201,49 @@ p {
   height: 100%;
   width: 77%;
   background-color: white; }
-  .mainBody .mobile-header {
-    display: none;
-    height: 7%;
-    background-color: DodgerBlue; }
-    .mainBody .mobile-header .rightsidebar-open {
-      transform: translateX(0); }
-    .mainBody .mobile-header ul {
-      position: fixed;
-      top: 0px;
-      right: 0;
-      padding: 0;
-      margin: 0;
-      background-color: white;
-      color: black;
-      z-index: 5;
-      width: 28%;
-      border-radius: 2px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      transform: translateX(100%);
-      transition: transform 0.5s;
-      transition-timing-function: ease; }
-      .mainBody .mobile-header ul li {
-        padding-top: 8px;
-        list-style-type: none;
-        height: 30px;
-        padding-left: 12px;
-        cursor: pointer;
-        color: #7f8c8d; }
-  .mainBody p {
-    position: fixed;
-    top: 12px;
-    left: 40px;
-    color: white;
-    font-size: 20px; }
-  .mainBody i {
-    position: fixed;
-    color: white;
-    font-size: 25px;
-    top: 12px; }
-  .mainBody .fa-bars {
-    left: 12px; }
-  .mainBody .fa-ellipsis-v {
-    right: 12px; }
   .mainBody .flex-template {
-    height: 93%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-content: flex-start;
     padding-left: 6%;
-    padding-right: 20px;
-    padding-top: 10px; }
+    padding-right: 20px; }
     .mainBody .flex-template .flex-templateCard {
-      height: 300px;
+      height: 310px;
       width: 212px;
-      border: 1px solid #ecf0f1;
       border-radius: 1px;
       margin: 10px;
-      cursor: pointer;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       position: relative; }
       .mainBody .flex-template .flex-templateCard img {
-        height: 85%;
-        width: 100%; }
+        height: 86%;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 1px; }
       .mainBody .flex-template .flex-templateCard i {
         position: absolute;
         top: 10px;
         left: 10px;
-        color: #ecf0f1; }
+        color: #ecf0f1;
+        font-size: 30px;
+        cursor: pointer; }
         .mainBody .flex-template .flex-templateCard i:hover {
-          color: #2ecc71; }
+          color: #4CAF50; }
       .mainBody .flex-template .flex-templateCard .description {
         position: relative;
         height: 14%;
         bottom: 5px;
-        padding-left: 20px;
-        padding-top: 10px; }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #ecf0f1;
+        border-top: none; }
   @media screen and (max-width: 760px) {
     .mainBody {
-      width: 100%; }
+      width: 100%;
+      margin-top: 13%; }
       .mainBody .mobile-header {
         display: block; }
       .mainBody .flex-template {
@@ -234,8 +251,12 @@ p {
         justify-content: space-around; }
         .mainBody .flex-template .flex-templateCard {
           height: 29%;
-          width: 30%; }
+          width: 36%;
+          margin-bottom: 1px; }
+          .mainBody .flex-template .flex-templateCard .img {
+            height: 93%; }
           .mainBody .flex-template .flex-templateCard .description {
+            height: 7%;
             padding-left: 5px;
             font-size: 13px; } }
 
