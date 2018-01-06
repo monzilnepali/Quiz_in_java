@@ -187,8 +187,7 @@ html, body {
       float: right; } }
 
 #optionbox {
-  max-height: 64.5%;
-  padding-top: 20px; }
+  max-height: 64.5%; }
   @media screen and (max-width: 768px) {
     #optionbox {
       padding-top: 5%;
@@ -198,6 +197,12 @@ html, body {
     padding-left: 20px;
     margin-bottom: 0px;
     display: none; }
+  #optionbox #correctAnswerPopup {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 15; }
   #optionbox .col-sm-6 {
     text-align: center; }
     #optionbox .col-sm-6 .btn-default {

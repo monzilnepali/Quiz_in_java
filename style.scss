@@ -279,7 +279,8 @@ $innerCircle) {
 #optionbox {
 
     max-height: 64.5%;
-    padding-top: 20px; // border: 1px solid white;
+  
+   // padding-top: 20px; // border: 1px solid white;
     @media screen and (max-width: 768px) {
         padding-top:5%;
         padding-bottom: 5%;
@@ -289,6 +290,14 @@ $innerCircle) {
         padding-left: 20px;
         margin-bottom: 0px;
         display: none;
+    }
+    #correctAnswerPopup{
+        background-color:white;
+        height:100%;
+        width:100%;
+      display:none;
+        z-index: 15;
+       
     }
     .col-sm-6 {
         // border:1px solid white;

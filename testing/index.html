@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="pdf-style.css">
+
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="color-overlay"></div>
+		<div class="container">
+
+			<div class="sidebar-container">
+				<div class="sidebar-toggler mobile-only">close</div>
+				<h3 >Fill up form</h3>
+			<form>
+				<div class="personal-info-header tab">
+					<p> <i class="fa fa-caret-down" aria-hidden="true"></i> Personal Info</p>
+				</div>
+                <div class="list personal-info">
+                	<input type="text" placeholder="First Name" style="width:49%;margin-right:2%;" autocomplete="on">
+                	<input type="text" placeholder="Last Name" style="width:49%;">
+                	<input type="text" placeholder="Full Address" style="width:100%;">
+                	<input type="Number" placeholder="Contact Number" style="width:100%;">
+                	<input type="text" placeholder="Email Address" style="width:100%;">
+                </div>
+                <div class="career-obj-header tab">
+					<p> <i class="fa fa-caret-down" aria-hidden="true"></i> Career Objective</p>
+				</div>
+
+                <div class="list career-obj-info">
+                	<textarea placeholder="career objective"></textarea>
+                </div>
+               <div class="academic-qualification-header tab">
+					<p> <i class="fa fa-caret-down" aria-hidden="true"></i> Academic Qualification</p>
+					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+
+				</div>
+                <div class="list academic-qualification">
+                	<li for="0">
+                	<input type="text" placeholder="Degree" style="width:15% ">
+                	<input type="text" placeholder="Board/University" style="width: 45%" >
+                	<input type="text" placeholder="Year" style="width: 15%">
+                	<input type="text" placeholder="Percent" style="width:15%">
+                      </li>
+                     
+                      
+
+                </div>
+				
+				</form>
+				<button id="pdf-generator-btn">Generate</button>
+			</div><!-- end of sidebar container -->
+			<div class="mainbody-container">
+				<div class="pdf-preview-header">
+					<i class="fa fa-bars sidebar-toggler mobile-only"></i>
+					<p>PDF Preview</p>
+					<button>Download</button>
+				</div>
+				<!-- <div class="pdf-preview-text">
+					<div><i class="fa fa-file-pdf-o" aria-hidden="true"> PDF Preview</i>
+                 </div>
+				</div> -->
+				 <iframe id="pdf_preview" type="application/doc" src="" frameborder="0" scrolling="no" >	
+				</iframe> 
+		
+
+			</div>
+		</div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="build/pdfmake.min.js"></script>
+		<script src="build/vfs_fonts.js"></script>
+			<script src="script.js"></script>
+		
+
+	
+</body>
+</html>
