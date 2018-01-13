@@ -20,11 +20,14 @@ p {
 
 .signup {
   background-color: white;
-  height: 80%;
+  height: auto;
   width: 30%;
   transition: height 0.3s;
   transition-timing-function: ease-out;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  @media screen and (max-width: 760px) {
+    .signup {
+      width: 100%; } }
   .signup .signup__header {
     height: 55px;
     width: 100%;
@@ -63,6 +66,7 @@ p {
     margin-left: 8%;
     margin-right: 5%;
     padding-top: 10px;
+    margin-bottom: 20px;
     height: auto;
     display: none; }
     .signup .signup__form .signup__form-inputgroup {
@@ -113,4 +117,4 @@ p {
   .signup .signup__form--open {
     display: block; }
 
-/*# sourceMappingURL=login_style.css.map */
+/*# sourceMappingURL=signupStyle.css.map */

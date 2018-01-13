@@ -6,11 +6,11 @@ $(document).ready(function(){
 		
 		if(this.className!="btn btn--active"){
 			console.log("true");
-	        if(tab_id=='teacher'){
-	        	 $('.signup').css("height","93%");
-				}else{
-					 $('.signup').css("height","80%");
-				}
+	   //      if(tab_id=='teacher'){
+	   //      	 $('.signup').css("height","93%");
+				// }else{
+				// 	 $('.signup').css("height","80%");
+				// }
 
 		$('.signup__option>.btn').removeClass('btn--active');
 		$('.signup__form').removeClass('signup__form--open');
