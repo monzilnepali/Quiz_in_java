@@ -33,7 +33,7 @@ document.getElementById("profileReset").addEventListener("click",function(){
         var timerVariable;
         var i = 0;
         //variable for question
-        var categoriesQuestion = ["science", "computer", "programming"];
+        var categoriesQuestion = ["science", "computer", "programming","PUBG"];
         var question = ["Which of the following is a non metal that remains liquid at room temperature",
             "What is the name of the network of computers from which the Internet has emerged", "In what year was Google launched on the web", "Which header file should be included to use functions like malloc() and calloc()?"
         ];
