@@ -37,10 +37,14 @@ document.getElementById("profileReset").addEventListener("click",function(){
         var question = ["Which of the following is a non metal that remains liquid at room temperature",
             "What is the name of the network of computers from which the Internet has emerged", "In what year was Google launched on the web", "Which header file should be included to use functions like malloc() and calloc()?"
         ];
+question.push("which is the best gun in pubg");
         var categories = ["0", "1", "1", "2"];
+categories.push("3")
         var answer = ["0", "5", "10", "13"];
+answer.push("18");
         var answerOption = ["Phosphorous", "Bromine", "Chlorine", "Helium", "1992", "1990", "1926", "1999", "2000", "2001", "2002", "2003", "h", "memory.h", "stdlib.h", "string.h", "dos.h"];
-        var currentQuestionIndex = -1;
+answerOption.push("akm","m416","scarl","veector");       
+var currentQuestionIndex = -1;
         var usersScore = 0;
         var usercateselection = [];
         var randomQuestion = [];
